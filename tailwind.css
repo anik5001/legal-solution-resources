@@ -1,1 +1,12 @@
- @import "tailwindcss"
+ /* @import "tailwindcss";
+ @theme {
+  --font-eb:"EB Garamond", serif;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "tailwindcss";
+@theme {
+  --font-roboto: "Roboto", sans-serif; 
+}
+.bg-gradient1{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/banner.png');
+}
