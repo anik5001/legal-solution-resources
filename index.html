@@ -23,10 +23,18 @@
         <nav class="">
           <ul class="flex gap-10">
             <li><a href="">Home </a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Cases</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li>
+              <a href="">Services<i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li>
+              <a href="">Cases<i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li>
+              <a href="">Blog<i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li>
+              <a href="">Contact Us<i class="fa-solid fa-angle-right"></i></a>
+            </li>
           </ul>
         </nav>
         <button class="text-[18px] bg-[#B68C5A] w-[200px] h-[50px] rounded-md">
@@ -278,13 +286,14 @@
               </p>
             </div>
           </div>
-          <div>
+          <form action="">
             <input
               type="text"
               name=""
               id=""
               placeholder="Your Name"
               class="bg-gray-200 w-[500px] h-[60px] rounded-[8px] mb-[30px]"
+              required
             />
 
             <input
@@ -293,6 +302,7 @@
               id=""
               placeholder="Your Email"
               class="bg-gray-200 w-[500px] h-[60px] rounded-[8px] mb-[30px]"
+              required
             />
 
             <input
@@ -301,6 +311,7 @@
               id=""
               placeholder="Subject"
               class="bg-gray-200 w-[500px] h-[60px] rounded-[8px] mb-[30px]"
+              required
             />
 
             <textarea
@@ -309,6 +320,8 @@
               cols="30"
               rows="10"
               class="bg-gray-200 w-[500px] h-[200px] rounded-[8px] mb-[30px]"
+              placeholder="Your Message"
+              required
             >
  Your Message</textarea
             >
@@ -317,7 +330,7 @@
             >
               Send Message
             </button>
-          </div>
+          </form>
         </div>
       </section>
     </main>
@@ -364,18 +377,21 @@
             Subscribe for our latest & <br />Articles. We Won’t Give You <br />
             Spam Mails
           </p>
-          <input
-            type="email"
-            name=""
-            id=""
-            placeholder="Email Address"
-            class="bg-gray-200 w-[180px] h-[70] py-2 text-black"
-          />
-          <button
-            class="absolute right-[137px] bg-[#B68C5A] w-[100px] h-[40px]"
-          >
-            <i class="fa-regular fa-paper-plane"></i>
-          </button>
+          <form action="">
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Email Address"
+              class="bg-gray-200 w-[180px] h-[70] py-2 text-black"
+              required
+            />
+            <button
+              class="absolute right-[137px] bg-[#B68C5A] w-[100px] h-[40px]"
+            >
+              <i class="fa-regular fa-paper-plane"></i>
+            </button>
+          </form>
         </div>
       </section>
     </footer>
